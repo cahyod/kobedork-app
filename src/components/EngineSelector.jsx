@@ -16,7 +16,7 @@ const EngineSelector = ({ selectedEngine, onEngineChange }) => {
             type="button"
             onClick={() => onEngineChange(engine.id)}
             className={`segmented-option w-full ${
-              selectedEngine === engine.id ? 'segmented-option.active' : ''
+              selectedEngine === engine.id ? 'active' : ''
             }`}
           >
             {engine.name}
