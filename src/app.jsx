@@ -180,6 +180,13 @@ function App() {
           )}
         </main>
       </div>
+
+      {/* Footer */}
+      <footer className="py-6 text-center text-sm text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700">
+        <p>KOBEDORK - Advanced Search Dorking Utility v1.0</p>
+        <p className="mt-1">For security research and bug bounty purposes only</p>
+        <p className="mt-2">Supported by: <a href="https://cybersecurity.or.id/" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline">Cybersecurity Indonesia</a></p>
+      </footer>
     </div>
   );
 }
