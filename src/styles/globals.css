@@ -1,0 +1,142 @@
+/* Global styles for KOBEDORK application */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #3b82f6; /* blue-500 */
+  --color-primary-dark: #2563eb; /* blue-600 */
+  --color-secondary: #6b7280; /* gray-500 */
+  --color-background: #f8fafc; /* slate-50 */
+  --color-surface: #ffffff;
+  --color-text: #1e293b; /* slate-800 */
+  --color-text-secondary: #64748b; /* slate-500 */
+  --color-border: #cbd5e1; /* slate-300 */
+  --color-error: #ef4444; /* red-500 */
+  --color-success: #10b981; /* emerald-500 */
+}
+
+[data-theme='dark'] {
+  --color-background: #0f172a; /* slate-900 */
+  --color-surface: #1e293b; /* slate-800 */
+  --color-text: #f1f5f9; /* slate-50 */
+  --color-text-secondary: #94a3b8; /* slate-300 */
+  --color-border: #475569; /* slate-600 */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color, color 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Animation for theme transition */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Updated button styles based on UI design */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+}
+
+.btn-primary {
+  @apply bg-blue-500 text-white hover:bg-blue-600 shadow;
+}
+
+.btn-primary-large {
+  @apply px-6 py-3 rounded-full bg-blue-500 text-white font-semibold shadow hover:bg-blue-600 transition;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600;
+}
+
+.btn-outline {
+  @apply border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white;
+}
+
+.btn-ghost {
+  @apply text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700;
+}
+
+.btn-danger {
+  @apply bg-red-500 text-white hover:bg-red-600;
+}
+
+/* Updated card styles based on UI design */
+.card {
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 border border-slate-100 dark:border-slate-700;
+}
+
+/* Updated input styles based on UI design */
+.input {
+  @apply w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 dark:border-slate-600 dark:text-white;
+}
+
+/* Updated preview dork block styles based on UI design */
+.dork-preview {
+  @apply bg-slate-900 text-lime-400 p-4 rounded-xl text-sm overflow-auto font-mono;
+}
+
+/* For the main layout */
+.main-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Segmented button for engine selector */
+.segmented-control {
+  @apply inline-flex rounded-lg p-1 bg-slate-100 dark:bg-slate-700;
+}
+
+.segmented-option {
+  @apply flex-1 px-4 py-2 text-center text-sm font-medium rounded-md cursor-pointer transition-colors;
+}
+
+.segmented-option.active {
+  @apply bg-white dark:bg-slate-600 shadow text-blue-600 dark:text-blue-300;
+}
+
+/* Favorite star styling */
+.favorite-star {
+  @apply text-yellow-500 hover:text-yellow-600 cursor-pointer;
+}

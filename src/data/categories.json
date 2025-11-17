@@ -1,0 +1,153 @@
+{
+  "categories": [
+    {
+      "id": "directory-listing",
+      "name": "Directory Listing & File Exposure",
+      "description": "Find exposed directories and sensitive files",
+      "templates": [
+        "site:TARGET intitle:\"index of\"",
+        "site:TARGET \"index of\" backup",
+        "site:TARGET \"index of\" admin",
+        "site:TARGET \"index of\" uploads",
+        "site:TARGET \"index of\" config",
+        "site:TARGET intitle:\"index of\" .git",
+        "site:TARGET intitle:\"index of\" logs",
+        "site:TARGET intitle:\"index of\" db",
+        "site:TARGET intitle:\"index of\" private",
+        "site:TARGET intitle:\"index of\" passwords",
+        "site:TARGET \"index of\" .env",
+        "site:TARGET \"index of\" source",
+        "site:TARGET \"parent directory\"",
+        "site:TARGET \"directory listing\"",
+        "site:TARGET \"index of\" .ssh",
+        "site:TARGET \"index of\" tmp",
+        "site:TARGET \"index of\" home",
+        "site:TARGET \"index of\" phpmyadmin",
+        "site:TARGET \"index of\" backups",
+        "site:TARGET \"index of\" storage"
+      ]
+    },
+    {
+      "id": "login-panels",
+      "name": "Login / Admin / Panel",
+      "description": "Find administrative login panels",
+      "templates": [
+        "site:TARGET inurl:login",
+        "site:TARGET inurl:admin",
+        "site:TARGET inurl:dashboard",
+        "site:TARGET inurl:auth",
+        "site:TARGET intitle:admin",
+        "site:TARGET inurl:cpanel",
+        "site:TARGET inurl:wp-login.php",
+        "site:TARGET inurl:signin",
+        "site:TARGET inurl:manage",
+        "site:TARGET inurl:controlpanel",
+        "site:TARGET inurl:administrator",
+        "site:TARGET intitle:\"admin panel\"",
+        "site:TARGET inurl:login.php",
+        "site:TARGET inurl:user/login",
+        "site:TARGET inurl:secure/login"
+      ]
+    },
+    {
+      "id": "errors-debugging",
+      "name": "Error, Debug, Warning",
+      "description": "Find error pages and debugging information",
+      "templates": [
+        "site:TARGET \"PHP Notice\"",
+        "site:TARGET \"PHP Warning\"",
+        "site:TARGET \"Warning:\" \"failed to open stream\"",
+        "site:TARGET \"Fatal error\"",
+        "site:TARGET \"Unhandled exception\"",
+        "site:TARGET \"Undefined index\"",
+        "site:TARGET \"Undefined variable\"",
+        "site:TARGET \"Deprecated\"",
+        "site:TARGET \"Stack trace\"",
+        "site:TARGET \"Warning: mysql\"",
+        "site:TARGET \"SQL syntax\"",
+        "site:TARGET \"Warning: getimagesize\"",
+        "site:TARGET \"division by zero\"",
+        "site:TARGET \"on line\"",
+        "site:TARGET \"Notice: Trying to\"",
+        "site:TARGET \"Session warning\"",
+        "site:TARGET \"Permission denied\"",
+        "site:TARGET \"Undefined function\"",
+        "site:TARGET \"Error establishing database connection\"",
+        "site:TARGET \"Call to undefined\""
+      ]
+    },
+    {
+      "id": "sensitive-files",
+      "name": "Sensitive Files",
+      "description": "Find exposed sensitive files",
+      "templates": [
+        "site:TARGET ext:env",
+        "site:TARGET ext:log",
+        "site:TARGET ext:txt password",
+        "site:TARGET ext:json \"api\"",
+        "site:TARGET ext:ini",
+        "site:TARGET ext:conf",
+        "site:TARGET ext:bak",
+        "site:TARGET ext:old",
+        "site:TARGET ext:yaml",
+        "site:TARGET ext:yml",
+        "site:TARGET ext:sql",
+        "site:TARGET ext:csv",
+        "site:TARGET ext:xlsx",
+        "site:TARGET ext:docx",
+        "site:TARGET ext:pdf",
+        "site:TARGET ext:db",
+        "site:TARGET ext:cfg",
+        "site:TARGET \"config.php\"",
+        "site:TARGET \"settings.php\"",
+        "site:TARGET \"database.php\""
+      ]
+    },
+    {
+      "id": "source-code",
+      "name": "Source Code Exposure",
+      "description": "Find exposed source code",
+      "templates": [
+        "site:TARGET ext:php",
+        "site:TARGET ext:html",
+        "site:TARGET ext:js",
+        "site:TARGET ext:css",
+        "site:TARGET ext:xml",
+        "site:TARGET \"source code\"",
+        "site:TARGET \"public class\"",
+        "site:TARGET \"import java\"",
+        "site:TARGET \"import python\"",
+        "site:TARGET \"<?php\""
+      ]
+    },
+    {
+      "id": "credentials",
+      "name": "Credentials / Keys / Secrets",
+      "description": "Find exposed credentials and keys",
+      "templates": [
+        "site:TARGET \"DB_PASSWORD\"",
+        "site:TARGET \"db_pass\"",
+        "site:TARGET \"db_user\"",
+        "site:TARGET \"api_key\"",
+        "site:TARGET \"secret_key\"",
+        "site:TARGET \"private key\"",
+        "site:TARGET \"ssh\"",
+        "site:TARGET \"token\"",
+        "site:TARGET \"jwt\"",
+        "site:TARGET \"Authorization: Bearer\""
+      ]
+    },
+    {
+      "id": "misc",
+      "name": "Misc & Advanced Dorks",
+      "description": "Miscellaneous and advanced dorks",
+      "templates": [
+        "site:TARGET \"index of\" *",
+        "site:TARGET \"forbidden\"",
+        "site:TARGET \"access denied\"",
+        "site:TARGET -www",
+        "site:TARGET \"root\" \"index of\""
+      ]
+    }
+  ]
+}
