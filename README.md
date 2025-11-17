@@ -4,7 +4,7 @@ KOBEDORK is a powerful web-based tool designed for security researchers and bug 
 
 ## Features
 
-- **Dork Categories**: Predefined categories for common vulnerability types (Sensitive Files, SQLi, XSS, API Exposure, etc.)
+- **Dork Categories**: Predefined categories for common vulnerability types (Directory Listing, Login Panels, Errors, Sensitive Files, etc.)
 - **Real-time Query Builder**: Build and preview queries as you create them
 - **Multi-Search Engine Support**: Execute queries on Google, Bing, and DuckDuckGo
 - **Favorites System**: Save and manage your most useful dorks
@@ -12,6 +12,13 @@ KOBEDORK is a powerful web-based tool designed for security researchers and bug 
 - **Advanced Options**: Custom operators and site-specific searching
 - **Dark/Light Theme**: Choose your preferred viewing mode
 - **Client-Side Only**: No backend required - all data stored in browser
+- **100+ Predefined Dorks**: Comprehensive set of security testing queries
+
+## Application Interface
+
+![KOBEDORK Application Interface](docs/app-interface.png)
+
+*The application features a modern UI with dork categories on the left, query builder in the center, and template variants on the right, with support for Google, Bing, and DuckDuckGo search engines.*
 
 ## How It Works
 
