@@ -7,16 +7,27 @@ const ThemeToggle = () => {
     // Check for saved theme in localStorage, otherwise use system preference
     const savedTheme = localStorage.getItem('kobedork-theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
     setTheme(initialTheme);
-    document.documentElement.setAttribute('data-theme', initialTheme);
+
+    if (initialTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
+
+    if (newTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
     localStorage.setItem('kobedork-theme', newTheme);
   };
 
@@ -24,7 +35,7 @@ const ThemeToggle = () => {
     <button
       type="button"
       onClick={toggleTheme}
-      className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+      className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
       {theme === 'light' ? (
