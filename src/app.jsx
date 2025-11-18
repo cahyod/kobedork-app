@@ -154,6 +154,7 @@ function App() {
               onSaveToFavorite={handleSaveToFavorite}
               onSaveToHistory={handleSaveToHistory}
               onRunExternalQuery={handleRunExternalQuery}
+              showNotification={showNotification}
             />
           )}
 

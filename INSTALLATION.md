@@ -1,4 +1,4 @@
-# KOBEDORK Installation Guide
+# KOBEDORK Installation Guide (v1.1)
 
 This guide will help you set up and run the KOBEDORK application on your local machine.
 
@@ -62,7 +62,7 @@ npm run dev
 
 This will start a development server, typically at `http://localhost:3000`, and automatically open the application in your default browser.
 
-> **Note**: If port 3000 is already in use, the application will try another available port (e.g., 3001, 3002, etc.) and will show the correct URL in the terminal output.
+> **Note**: If port 3000 is already in use, the application will try another port (e.g., 3001, 3002, etc.) and will show the correct URL in the terminal output.
 
 ### Production Build
 
@@ -79,6 +79,16 @@ To preview the production build locally:
 ```bash
 npm run preview
 ```
+
+## Version 1.1 Features
+
+KOBEDORK v1.1 includes several important improvements:
+
+- **Enhanced Dork Templates**: Improved queries across all 7 categories with more effective search patterns
+- **Better Query Building**: Fixed operator application logic for more accurate dork construction
+- **Added Copy Functionality**: One-click copying of generated queries with notification feedback
+- **Expanded Coverage**: More comprehensive templates for credentials, sensitive files, and error detection
+- **Improved Error Handling**: Better error handling for clipboard operations and user feedback
 
 ## Configuration
 
@@ -104,13 +114,16 @@ The application uses default configurations that should work out of the box. How
 **Issue**: Application fails to compile
 - **Solution**: Verify all required dependencies are installed with `npm install`
 
+**Issue**: Copy functionality not working
+- **Solution**: Ensure you are using a modern browser that supports the Clipboard API (Chrome 66+, Firefox 63+, Safari 13.1+)
+
 ### Browser Compatibility
 
-KOBEDORK works with modern browsers:
-- Chrome 76+
-- Firefox 68+
-- Safari 13+
-- Edge 79+
+KOBEDORK works with modern browsers (v1.1 features enhanced):
+- Chrome 76+ (Clipboard API support)
+- Firefox 68+ (Clipboard API support)
+- Safari 13.1+ (Clipboard API support)
+- Edge 79+ (Clipboard API support)
 
 ## Updating
 

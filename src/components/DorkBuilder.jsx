@@ -5,7 +5,7 @@ import QueryPreview from './QueryPreview';
 import { buildDork, getCategoryTemplates } from '../modules/dorkBuilder';
 import { getSearchUrl } from '../modules/searchEngine';
 
-const DorkBuilder = ({ onSaveToHistory, onSaveToFavorite, onRunExternalQuery }) => {
+const DorkBuilder = ({ onSaveToHistory, onSaveToFavorite, onRunExternalQuery, showNotification }) => {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [keyword, setKeyword] = useState('');
   const [operator, setOperator] = useState('');
@@ -51,8 +51,19 @@ const DorkBuilder = ({ onSaveToHistory, onSaveToFavorite, onRunExternalQuery }) 
 
   const handleCopyQuery = async () => {
     if (query) {
-      await navigator.clipboard.writeText(query);
-      alert('Query copied to clipboard!');
+      try {
+        await navigator.clipboard.writeText(query);
+        if (showNotification) {
+          showNotification('Query copied to clipboard!');
+        } else {
+          console.log('Query copied to clipboard!');
+        }
+      } catch (err) {
+        console.error('Failed to copy query: ', err);
+        if (showNotification) {
+          showNotification('Failed to copy query to clipboard');
+        }
+      }
     }
   };
 
@@ -152,6 +163,17 @@ const DorkBuilder = ({ onSaveToHistory, onSaveToFavorite, onRunExternalQuery }) 
             }`}
           >
             Run Query
+          </button>
+
+          <button
+            type="button"
+            onClick={handleCopyQuery}
+            disabled={!query}
+            className={`btn btn-secondary ${
+              !query ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
+          >
+            Copy
           </button>
 
           <button

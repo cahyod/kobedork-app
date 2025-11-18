@@ -1,4 +1,4 @@
-# KOBEDORK - Advanced Search Dorking Utility
+# KOBEDORK - Advanced Search Dorking Utility (v1.1)
 
 KOBEDORK is a powerful web-based tool designed for security researchers and bug bounty hunters to create, build, and execute search dorks on major search engines. A "dork" is a search query that uses special operators to find specific types of information on the internet, often used in security research to identify potential vulnerabilities or exposed data.
 
@@ -12,7 +12,9 @@ KOBEDORK is a powerful web-based tool designed for security researchers and bug 
 - **Advanced Options**: Custom operators and site-specific searching
 - **Dark/Light Theme**: Choose your preferred viewing mode
 - **Client-Side Only**: No backend required - all data stored in browser
-- **100+ Predefined Dorks**: Comprehensive set of security testing queries
+- **Enhanced Dork Templates**: Improved 100+ predefined dorks with better accuracy and comprehensive coverage
+- **Copy Functionality**: One-click copying of generated queries to clipboard
+- **Better Error Handling**: Improved user experience with proper notifications
 
 ## Application Interface
 
@@ -54,6 +56,14 @@ kobedork-app/
 │   ├── styles/ (global styles)
 │   └── pages/ (application pages)
 ```
+
+## Version 1.1 Improvements
+
+- **Enhanced Dork Templates**: Refined all 7 categories with more effective and comprehensive queries using better search patterns
+- **Improved Query Building**: Fixed operator application logic to properly combine operators with templates
+- **Better Copy Functionality**: Added copy button with notification feedback
+- **Expanded Search Coverage**: More comprehensive templates for credentials, sensitive files, and error detection
+- **Better Error Handling**: Proper handling of clipboard operations and error reporting
 
 ## Legal Disclaimer
 

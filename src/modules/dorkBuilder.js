@@ -10,7 +10,7 @@ import categoriesData from '../data/categories.json';
  * Builds a dork query based on the selected category, keyword, and optional operator
  * @param {string} category - The selected category ID
  * @param {string} keyword - The keyword to search for (typically a domain)
- * @param {object} options - Additional options like operator
+ * @param {object} options - Additional options like operator and site
  * @returns {string} The built dork query
  */
 export function buildDork(category, keyword, options = {}) {
@@ -32,14 +32,15 @@ export function buildDork(category, keyword, options = {}) {
   let baseTemplate = selectedCategory.templates[0] || '';
   let query = baseTemplate.replace(/TARGET/g, keyword);
 
-  // Apply operator if provided
+  // Apply operator if provided, modifying the entire query appropriately
   if (operator) {
     if (site) {
-      // If site is specified, format as: operator:site keyword
-      query = `${operator}:${site} ${keyword}`;
+      // If site is specified, apply the operator to the site and append the original query
+      query = `${operator}:${site} ${query}`;
     } else {
-      // Otherwise format as: operator:keyword
-      query = `${operator}:${keyword}`;
+      // Otherwise apply the operator to the keyword part of the query
+      // Extract just the keyword from query to apply the operator to it
+      query = `${operator}:${keyword} ${query.replace(keyword, '').trim()}`;
     }
   }
 
