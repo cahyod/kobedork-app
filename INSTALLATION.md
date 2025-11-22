@@ -18,6 +18,27 @@ npm --version
 
 If Node.js is not installed, you can download it from [nodejs.org](https://nodejs.org/).
 
+## Quick Start
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/cahyaod/kobedork-app.git
+cd kobedork-app
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start Development Server
+
+```bash
+npm run dev
+```
+
 ## Installation Steps
 
 ### 1. Clone or Download the Repository
@@ -159,4 +180,11 @@ If you encounter any issues during installation or setup, please check:
 3. Check the terminal output for specific error messages
 4. Refer to the README.md for additional information
 
-For additional support, you may want to check the project repository for issues or reach out to the development team.
+For additional support, see [SUPPORT.md](SUPPORT.md).
+
+## Contributing
+
+If you'd like to contribute to the project, see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+---
+*For questions or support, contact us at cahyod@yahoo.co.id*

@@ -18,6 +18,8 @@ You can make a one-time or recurring donation via PayPal:
 
 ### Cryptocurrency
 
+> **Note**: Please replace the placeholder addresses below with actual cryptocurrency wallet addresses before using.
+
 #### Bitcoin (BTC)
 ```
 bc1qlrrmlzt0yc0kexkms0vwn5qkynxlqs2dh7ph7z
@@ -43,23 +45,23 @@ ltc1qld5zcsvcl39auq0vnxjtfmc8t7saly5we6l5yr
 Cvtw7bzP6AWKAKPyU9i3MtZmz2u5P11G6rWVhyVF4t1v
 ```
 
-> **Note**: Please replace the placeholder addresses above with actual cryptocurrency wallet addresses before using.
-
 ## Other Ways to Support
 
 If you're unable to make a financial contribution, you can still support KOBEDORK in other ways:
 
+- **Star this Repository**: Give us a GitHub star to show your support
 - **Spread the Word**: Share KOBEDORK with other security researchers and bug bounty hunters
-- **Feedback**: Provide feedback and suggestions for improvements
-- **Bug Reports**: Report any issues you encounter
-- **Code Contributions**: Contribute to the project via GitHub (if available)
+- **Feedback**: Provide feedback and suggestions for improvements via [Issues](https://github.com/cahyaod/kobedork-app/issues)
+- **Bug Reports**: Report any issues you encounter [here](https://github.com/cahyaod/kobedork-app/issues)
+- **Code Contributions**: Contribute to the project via [Pull Requests](https://github.com/cahyaod/kobedork-app/pulls)
 - **Documentation**: Help improve documentation and guides
+- **Translations**: Help translate the tool for wider accessibility
 
 ## Thank You!
 
 Your support means the world to us and helps ensure KOBEDORK continues to be a valuable tool for the security research community. Every donation, regardless of size, makes a difference.
 
-For questions about donations, please contact us at [cahyod@yahoo.co.id]
+For questions about donations, please contact us at [cahyod@yahoo.co.id](mailto:cahyod@yahoo.co.id)
 
 ---
 *Last updated: November 2025*

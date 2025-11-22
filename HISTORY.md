@@ -27,6 +27,11 @@
 - Enhanced UI with additional copy button in query builder
 - Better browser compatibility checking for Clipboard API
 
+### Technical Improvements
+- Updated dependencies to latest stable versions
+- Improved build performance with Vite
+- Better code organization and modularity
+
 ---
 
 ## v1.0 - Initial Release
@@ -41,3 +46,12 @@
 - **Dark/Light Theme**: Choose your preferred viewing mode
 - **Client-Side Only**: No backend required - all data stored in browser
 - **100+ Predefined Dorks**: Comprehensive set of security testing queries
+
+### Technical Foundation
+- Built with React 18
+- Vite for fast builds and development
+- Tailwind CSS for styling
+- Client-side data storage using localStorage
+
+---
+*For support questions about different versions, see [SUPPORT.md](SUPPORT.md)*

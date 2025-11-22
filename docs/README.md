@@ -1,18 +1,35 @@
-# Adding a Real Screenshot to Documentation
+# KOBEDORK Documentation
 
-To add a real screenshot of the KOBEDORK application to this documentation:
+This directory contains documentation and assets for the KOBEDORK project.
 
-1. Open the application in your browser at http://localhost:3000
-2. Navigate to the main interface showing the dork builder
-3. Take a screenshot of the interface (including the category selection, query builder, and template variants)
-4. Save the image as "app-interface.png" in this docs/ directory
-5. The README.md will automatically display your screenshot
+## Files
 
-The image should show:
-- The left sidebar with dork categories
-- The main query builder panel with target domain input
-- The search engine selector (Google, Bing, DuckDuckGo)
-- The template variants panel showing different dork options
-- The dark/light theme toggle
+- `app-interface.png` - Application interface screenshot
+- Other documentation files and assets
 
-This will provide users with a visual reference of what the application looks like.
+## Contributing Documentation
+
+If you'd like to contribute to the documentation:
+
+1. See [CONTRIBUTING.md](../CONTRIBUTING.md) for contribution guidelines
+2. Follow the existing documentation style and format
+3. Submit your changes via pull request
+
+## Reporting Issues
+
+If you find issues with the documentation, please:
+
+1. Check existing issues at [Issues](https://github.com/yourusername/kobedork-app/issues)
+2. Create a new issue if needed, describing the problem
+3. Provide suggestions for improvements when possible
+
+## Support
+
+For documentation-related questions, see:
+
+- [README.md](../README.md) for main project information
+- [SUPPORT.md](../SUPPORT.md) for getting help
+- [CONTRIBUTING.md](../CONTRIBUTING.md) for contribution guidelines
+
+---
+*KOBEDORK - Advanced Search Dorking Utility*
