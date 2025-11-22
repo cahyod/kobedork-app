@@ -18,7 +18,7 @@ You can make a one-time or recurring donation via PayPal:
 
 ### Cryptocurrency
 
-> **Note**: Please replace the placeholder addresses below with actual cryptocurrency wallet addresses before using.
+> **Note**: Please confirm via email if you want to
 
 #### Bitcoin (BTC)
 ```
